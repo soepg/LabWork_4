@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Simple Omelette Recipe</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <script src="./js/individual.js" defer></script>
+</head>
+<body>
+  <main class="recipe-page">
+    <article class="recipe-card">
+      <img class="recipe-image" src="./assets/images/image-omelette.jpeg" alt="Omelette served on a plate">
+      <div class="recipe-content">
+        <header class="recipe-header">
+          <h1 class="recipe-title">Simple Omelette Recipe</h1>
+          <p class="recipe-description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </header>
+        <section class="preparation" aria-labelledby="preparation-title">
+          <h2 id="preparation-title" class="preparation-title">Preparation time</h2>
+          <ul class="preparation-list">
+            <li><strong>Total:</strong> Approximately 10 minutes</li>
+            <li><strong>Preparation:</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
+          </ul>
+        </section>
+        <section class="ingredients" aria-labelledby="ingredients-title">
+          <h2 id="ingredients-title">Ingredients</h2>
+          <!-- ЛР4: елементи керування кількістю порцій -->
+          <div class="servings-controls" role="group" aria-label="Number of servings">
+            <span>Servings:</span>
+            <button type="button" id="decrease-servings" aria-label="Decrease servings">−</button>
+            <output id="servings-count" aria-live="polite">1</output>
+            <button type="button" id="increase-servings" aria-label="Increase servings">+</button>
+          </div>
+          <p class="recipe-note">Quantities are calculated for the selected number of servings.</p>
+          <ul class="ingredients-list">
+            <li class="ingredient">
+              <label><input type="checkbox" class="ingredient-check">
+                <span class="ingredient-text"><span class="ingredient-quantity" data-min="2" data-max="3">2–3</span> large eggs</span>
+              </label>
+            </li>
+            <li class="ingredient">
+              <label><input type="checkbox" class="ingredient-check">
+                <span class="ingredient-text">Salt, to taste</span>
+              </label>
+            </li>
+            <li class="ingredient">
+              <label><input type="checkbox" class="ingredient-check">
+                <span class="ingredient-text">Pepper, to taste</span>
+              </label>
+            </li>
+            <li class="ingredient">
+              <label><input type="checkbox" class="ingredient-check">
+                <span class="ingredient-text"><span class="ingredient-quantity" data-min="1" data-max="1">1</span> tbsp of butter or oil</span>
+              </label>
+            </li>
+            <li class="ingredient">
+              <label><input type="checkbox" class="ingredient-check">
+                <span class="ingredient-text">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
+              </label>
+            </li>
+          </ul>
+          <p id="ingredients-progress" class="ingredients-progress" aria-live="polite">Prepared 0 of 5</p>
+          <button type="button" id="reset-ingredients">Reset checks</button>
+        </section>
+        <section class="instructions" aria-labelledby="instructions-title">
+          <h2 id="instructions-title">Instructions</h2>
+          <!-- TODO: додайте інтерфейс власної додаткової функції -->
+          <ol class="instructions-list">
+            <li class="instruction"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+            <li class="instruction"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li class="instruction"><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+            <li class="instruction"><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li class="instruction"><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li class="instruction"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+          </ol>
+        </section>
+        <section class="nutrition" aria-labelledby="nutrition-title">
+          <h2 id="nutrition-title">Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <table class="nutrition-table">
+            <tbody>
+              <tr><th scope="row">Calories</th><td>277kcal</td></tr>
+              <tr><th scope="row">Carbs</th><td>0g</td></tr>
+              <tr><th scope="row">Protein</th><td>20g</td></tr>
+              <tr><th scope="row">Fat</th><td>22g</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
