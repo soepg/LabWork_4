@@ -25,6 +25,18 @@
             <li><strong>Preparation:</strong> 5 minutes</li>
             <li><strong>Cooking:</strong> 5 minutes</li>
           </ul>
+
+          <!--individual part-->
+          <div class="indi-time-calc">
+            <h3 class="indi-title">Calculate custom time</h3>
+            <div class="indi-inputs">
+              <label>Prep (min): <input type="number" id="indi-prep-time" min="0" step="1"></label>
+              <label>Cook (min): <input type="number" id="indi-cook-time" min="0" step="1"></label>
+              <button type="button" id="indi-calc-button">Calculate total</button>
+            </div>
+            <p id="indi-time-result" aria-live="polite"></p>
+          </div>
+
         </section>
         <section class="ingredients" aria-labelledby="ingredients-title">
           <h2 id="ingredients-title">Ingredients</h2>

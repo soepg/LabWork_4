@@ -264,3 +264,56 @@ button:focus-visible, input:focus-visible {
 .ingredient-check { flex-shrink: 0; margin: 6px 0 0; accent-color: var(--brown-800); }
 .ingredient.is-prepared .ingredient-text { text-decoration: line-through; color: var(--rose-800); }
 .ingredients-progress { margin: 16px 0 12px; font-weight: 700; }
+
+/*individual part*/
+.indi-time-calc {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--stone-150);
+}
+
+.indi-title {
+  margin: 0 0 12px;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--rose-800);  
+}
+
+.inid-inputs {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.inid-inputs label {
+  font-weight: 700;
+  color: var(--stone-900);
+}
+
+.inid-inputs input {
+  width: 70px;
+  padding: 6px;
+  border: 1px solid var(--stone-150);
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+#indi-calc-button {
+  margin-top: 15px;
+}
+
+#indi-time-result {
+  font-weight: 700;
+  margin: 0;
+}
+
+.error-text {
+  color: var(--rose-800);
+}
+
+.success-text {
+  color: var(--brown-800);
+}
