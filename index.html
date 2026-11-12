@@ -72,11 +72,11 @@
           <!--individual part-->
           <div class="indi-time-calc">
             <h3 class="indi-title">Calculate custom time</h3>
-            <div class="indi-inputs">
+            <form class="indi-inputs" novalidate>
               <label>Prep (min): <input type="number" class="indi-prep-time" min="0" step="1"></label>
               <label>Cook (min): <input type="number" class="indi-cook-time" min="0" step="1"></label>
-              <button type="button" class="indi-calc-button">Calculate total</button>
-            </div>
+              <button type="submit" class="indi-calc-button">Calculate total</button>
+            </form>
             <p class="indi-time-result" aria-live="polite"></p>
           </div>
 
