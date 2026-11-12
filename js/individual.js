@@ -1,9 +1,9 @@
 "use strict";
 
-const prepInput = document.querySelector("#indi-prep-time");
-const cookInput = document.querySelector("#indi-cook-time");
-const calcBtn = document.querySelector("#indi-calc-button");
-const resDisplay = document.querySelector("#indi-time-result");
+const prepInput = document.querySelector(".indi-prep-time");
+const cookInput = document.querySelector(".indi-cook-time");
+const calcBtn = document.querySelector(".indi-calc-button");
+const resDisplay = document.querySelector(".indi-time-result");
 
 function calcTotalTime() {
     const prepVal = prepInput.value;
@@ -24,8 +24,8 @@ function calcTotalTime() {
     }
 
     const total = prepTime + cookTime;
-    resDisplay.textContent = `Total custom time:${total} minutes`;
+    resDisplay.textContent = `Total custom time: ${total} minutes`;
     resDisplay.className = "success-text";
 }
 
-calcBtn.addEventListener("click", calcTotalTime)
+calcBtn.addEventListener("click", calcTotalTime);

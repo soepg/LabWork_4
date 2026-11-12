@@ -280,20 +280,19 @@ button:focus-visible, input:focus-visible {
   color: var(--rose-800);  
 }
 
-.inid-inputs {
+.indi-inputs {
   display: flex;
   gap: 12px;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 8px;
 }
 
-.inid-inputs label {
+.indi-inputs label {
   font-weight: 700;
   color: var(--stone-900);
 }
 
-.inid-inputs input {
+.indi-inputs input {
   width: 70px;
   padding: 6px;
   border: 1px solid var(--stone-150);
@@ -301,17 +300,14 @@ button:focus-visible, input:focus-visible {
   font-family: inherit;
 }
 
-#indi-calc-button {
-  margin-top: 15px;
-}
-
-#indi-time-result {
+.indi-time-result {
   font-weight: 700;
   margin: 0;
 }
 
 .error-text {
   color: var(--rose-800);
+  margin-bottom: 0;
 }
 
 .success-text {

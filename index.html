@@ -25,18 +25,6 @@
             <li><strong>Preparation:</strong> 5 minutes</li>
             <li><strong>Cooking:</strong> 5 minutes</li>
           </ul>
-
-          <!--individual part-->
-          <div class="indi-time-calc">
-            <h3 class="indi-title">Calculate custom time</h3>
-            <div class="indi-inputs">
-              <label>Prep (min): <input type="number" id="indi-prep-time" min="0" step="1"></label>
-              <label>Cook (min): <input type="number" id="indi-cook-time" min="0" step="1"></label>
-              <button type="button" id="indi-calc-button">Calculate total</button>
-            </div>
-            <p id="indi-time-result" aria-live="polite"></p>
-          </div>
-
         </section>
         <section class="ingredients" aria-labelledby="ingredients-title">
           <h2 id="ingredients-title">Ingredients</h2>
@@ -80,7 +68,18 @@
         </section>
         <section class="instructions" aria-labelledby="instructions-title">
           <h2 id="instructions-title">Instructions</h2>
-          <!-- TODO: додайте інтерфейс власної додаткової функції -->
+          
+          <!--individual part-->
+          <div class="indi-time-calc">
+            <h3 class="indi-title">Calculate custom time</h3>
+            <div class="indi-inputs">
+              <label>Prep (min): <input type="number" class="indi-prep-time" min="0" step="1"></label>
+              <label>Cook (min): <input type="number" class="indi-cook-time" min="0" step="1"></label>
+              <button type="button" class="indi-calc-button">Calculate total</button>
+            </div>
+            <p class="indi-time-result" aria-live="polite"></p>
+          </div>
+
           <ol class="instructions-list">
             <li class="instruction"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
             <li class="instruction"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
